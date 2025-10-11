@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Weihnachtsbingo",
+    "slug": "weihnachtsbingo",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/background.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0B3D2E"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bdab321c-b7cb-4edb-9a8c-ce0ec5117a45"
+      }
+    },
+    "android": {
+      "package": "com.hellaa.weihnachtsbingo"
+    },
+    "ios": {
+      "bundleIdentifier": "com.hellaa.weihnachtsbingo",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
+  }
+}
