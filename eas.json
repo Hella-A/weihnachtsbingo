@@ -11,8 +11,13 @@
       "cache": {
         "disabled": true
       },
-      "npm": {
-        "useCi": false
+      "android": {
+        "buildType": "apk",
+        "prebuildCommand": "npm install"
+      },
+      "ios": {
+        "simulator": false,
+        "prebuildCommand": "npm install"
       }
     }
   }
