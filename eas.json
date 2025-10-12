@@ -12,12 +12,10 @@
         "disabled": true
       },
       "android": {
-        "buildType": "apk",
-        "prebuildCommand": "npm install"
+        "buildType": "apk"
       },
       "ios": {
-        "simulator": false,
-        "prebuildCommand": "npm install"
+        "simulator": false
       }
     }
   }
