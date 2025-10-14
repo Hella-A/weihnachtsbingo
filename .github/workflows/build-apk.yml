@@ -1,0 +1,39 @@
+name: Build APK (Expo)
+
+on:
+  workflow_dispatch: # Du startest es manuell über GitHub
+  push:
+    branches: [ main ] # nur, wenn du willst, dass es beim Push läuft
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📦 Code aus Repo laden
+        uses: actions/checkout@v4
+
+      - name: 🧩 Node.js installieren
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: ⚙️ Abhängigkeiten installieren
+        run: npm ci
+
+      - name: 🚀 EAS CLI installieren
+        run: npm install -g eas-cli
+
+      - name: 🔑 Mit Expo einloggen
+        run: eas whoami || eas login --token ${{ secrets.EXPO_TOKEN }}
+
+      - name: 🏗️ APK bauen
+        run: eas build --platform android --profile production --non-interactive
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+
+      - name: 📤 APK-Datei speichern
+        uses: actions/upload-artifact@v4
+        with:
+          name: weihnachtsbingo-apk
+          path: dist/*.apk
