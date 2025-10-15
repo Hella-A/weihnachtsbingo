@@ -54,6 +54,14 @@ export default function HomeScreen() {
           <Text style={styles.buttonText}>Jetzt geht's looos: Zum Bingo</Text>
         </TouchableOpacity>
 
+        {/* 📸 Neuer Button für Fotos */}
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.push('/photos')}
+        >
+          <Text style={styles.buttonText}>Pics or it didn't happen</Text>
+        </TouchableOpacity>
+
         <Text style={styles.subtitle}>Viel Spaß und eine fantastische Adventszeit!</Text>
 
         {/* Sterne-Fortschritt unten */}
