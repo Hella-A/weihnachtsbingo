@@ -24,8 +24,8 @@ jobs:
       - name: 🚀 EAS CLI installieren
         run: npm install -g eas-cli
 
-      - name: 🔑 Mit Expo einloggen
-        run: eas whoami || eas login --token ${{ secrets.EXPO_TOKEN }}
+      - name: Authenticate with Expo
+        run: eas session:authenticate --token ${{ secrets.EXPO_TOKEN }}
 
       - name: 🏗️ APK bauen
         run: eas build --platform android --profile production --non-interactive
