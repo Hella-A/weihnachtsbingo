@@ -54,7 +54,6 @@ export default function HomeScreen() {
           <Text style={styles.buttonText}>Jetzt geht's looos: Zum Bingo</Text>
         </TouchableOpacity>
 
-        {/* 📸 Neuer Button für Fotos */}
         <TouchableOpacity
           style={styles.button}
           onPress={() => router.push('/photos')}
@@ -62,9 +61,15 @@ export default function HomeScreen() {
           <Text style={styles.buttonText}>Pics or it didn't happen</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.push('/impressum')}
+        >
+          <Text style={styles.buttonText}>Impressum</Text>
+        </TouchableOpacity>
+
         <Text style={styles.subtitle}>Viel Spaß und eine fantastische Adventszeit!</Text>
 
-        {/* Sterne-Fortschritt unten */}
         <Text style={styles.stars}>
           {"⭐".repeat(progress)}
           {"☆".repeat(10 - progress)}

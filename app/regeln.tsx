@@ -7,13 +7,13 @@ export default function RegelnScreen() {
 
   const rules = [
     "Ein Weihnachtsmarkt kann abgestempelt werden, wenn dort Umsatz gemacht wird, sprich Getränk, Essen oder Nippes gekauft wird.",
-    "Der Besuch muss gemeinsam mit min. einer Person aus dieser Gruppe erfolgen. Man kann max. drei Märkte mit derselben Person besuchen.",
     "Der Besuch muss durch ein Foto oder eine Quittung belegt und in der WhatsApp Gruppe dokumentiert werden.",
     "Das Abhaken in dieser fantastischen, liebevoll in All-Nightern erstellten App ist optional, wird aber von der Coderin gerne gesehen.",
-    "Der Spielzeitraum läuft vom 1. bis 23. Dezember.",
+    "Der Spielzeitraum läuft vom 1. bis 23. Dezember 2025.",
     "Wer als erstes alle Märkte abgehakt hat, hat gewonnen. Zu gewinnen gibt es Ehre, was aus Filz und der nächste Drink geht auf Alessa (muss aktiv eingefordert werden - klare Holschuld).",
     "Die jeweils führende Person darf das Whatsapp-Gruppenbild bestimmen.",
-    "Und last but not least: es können max. 2 Weihnachtsmärkte pro Tag abgehakt werden. Wir wollen ja lange was vom Bingo haben (looking at you, Kim! ;-))."
+    "Der Besuch sollte - muss aber nicht - gemeinsam mit min. einer Person aus dieser Gruppe erfolgen.",
+    "Und last but not least: es können max. 3 Weihnachtsmärkte pro Woche abgehakt werden. Wir wollen ja lange was vom Bingo haben (looking at you, Kim! ;-))."
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function RegelnScreen() {
           <Text style={styles.intro}>
             Wie immer wird der Spielspaß durch sinnvolle, wohlüberlegte Regeln erst möglich gemacht. 
             Nach den Erfahrungen und Eskalationen des letzten Jahres, war ich so frei und habe die Regeln überarbeitet. 
-            Dieses Mal geht es noch mehr um gemeinsame Weihnachtsmarktbesuche - vielleicht sogar in neuen Konstellationen (sorry an alle introvertierten Teilnehmer).
+            Dieses Mal geht es noch mehr um gemeinsame Weihnachtsmarktbesuche, die sich über den gesamten Spielzeitraum erstrecken.
           </Text>
 
           <View style={styles.rulesContainer}>
